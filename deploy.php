@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'my_project');
 
 // Project repository
-set('repository', 'git@domain.com:username/repository.git');
+set('repository', 'https://github.com/thedevdojo/laravel-deployer-cloudways.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -22,8 +22,9 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');
+host('147.182.230.243')
+    ->user('master_zwbztqgzhn')
+    ->set('deploy_path', '/home/master/applications/nxrexcydjb/public_html');
 
 // Tasks
 
